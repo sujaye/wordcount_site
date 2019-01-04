@@ -1,0 +1,8 @@
+<h1>Type the text to count its length...</h1>
+<a href="{% url 'home' %}"><h5>Home</h5></a>
+<a href="{% url 'about' %}"><h5>About Us</h5></a>
+
+<form action="{% url 'count' %}">
+    <textarea cols="40", rows="10", name="fulltext"></textarea><br />
+    <input type="submit", value="Count.!" />
+</form>

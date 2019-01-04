@@ -1,0 +1,12 @@
+<h1>There are {{ count }} words & {{ char }} characters in your text....!</h1>
+
+<a href="{% url 'home' %}"><h2><input type="button", value="START AGAIN"></h2></a>
+
+<h1>Your text is: </h1>
+{{ fulltext }}
+
+<h1>The wordcount goes below: </h1>
+
+{% for key, value in sorted_words %}
+<h5>{{ key }} - {{ value }} </h5>
+{% endfor %}
